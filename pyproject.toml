@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dual-photography"
+version = "0.1.0"
+description = "Simulated dual photography in Mitsuba 3"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mitsuba==3.9.1",
+    "numpy>=2.0",
+    "matplotlib>=3.8",
+    "imageio>=2.31",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+notebooks = ["ipykernel>=6.29"]
+
+[tool.setuptools]
+packages = ["assets", "sampling_algorithms", "utils"]

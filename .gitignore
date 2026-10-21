@@ -1,0 +1,9 @@
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store
+*.npy
+
+assets/objs/*
+!assets/objs/.gitkeep
+results/car/adaptive/*_frames/
